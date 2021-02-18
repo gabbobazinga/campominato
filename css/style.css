@@ -1,0 +1,58 @@
+body {
+  background-color: #181A1B;
+}
+
+h3 {
+  position: relative;
+  top: -25px;
+  font-weight: 100;
+}
+
+.jumbotron-custom {
+  background-color: #232627;
+  color: lightgray;
+  margin-top: 2rem;
+}
+
+.rules {
+  text-align: center;
+}
+
+.rules li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.rules li:last-child {
+  margin: 0;
+}
+
+.dashboard {
+  width: 50vh;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.slot {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+.easy .slot {
+  width: calc(100% / 10);
+  border: 1px solid gray;
+}
+
+.slot:hover {
+  background-color: gray;
+}
+
+#results {
+  font-size: 5rem;
+  text-align: center;
+}
