@@ -24,3 +24,16 @@ function minesGeneration (randomsNumbers, min, max) {
   }
   return mines;
 }
+
+function checkAndRemove (elementID) {
+  //CHECK IF THERE'S SLOTS
+  var hasChild = document.getElementById(elementID).hasChildNodes();
+  console.log('ha figli? ' + hasChild);
+
+  //DELETE SLOTS
+  if(hasChild) {
+    var oldSlot = document.getElementById(elementID);
+    oldSlot.removeChild(oldSlot.childNodes[0]);
+  }
+  return;
+}

@@ -8,24 +8,37 @@
     <script src="js/functions.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="container">
-      <div style="position: relative;" class="jumbotron jumbotron-custom">
+    <div class="container container-custom">
+      <div class="jumbotron jumbotron-custom">
         <div class="row">
           <div class="w-100 text-center">
             <h1 class="display-4">Campo Minato</h1>
             <h3>easy</h3>
           </div>
+          <div class="w-100 text-center">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-dark" value="easy">EASY</button>
+              <button type="button" class="btn btn-dark" value="medium">MEDIUM</button>
+              <button type="button" class="btn btn-dark" value="hard">HARD</button>
+            </div>
+          </div>
           <div class="col wrapper">
-            <div class="dashboard easy"></div>
+            <div id="dashboard" class="dashboard"></div>
           </div>
           <div class="w-100">
             <ul class="rules">
-              <li id="attempts">TENTATIVI RIMASTI: </li>
-              <li id="rounds" >VINCI TRA </li>
+              <li id="attempts"></li>
+              <li id="rounds" ></li>
             </ul>
           </div>
           <div class="w-100">
             <h1 id="results"></h1>
+            <h3 id="restart">for RESTART select a difficulty</h3>
+            <div id="score">
+              <span>SCORE <br></span>
+              <span id="win"></span>
+              <span id="lose"></span>
+            </div>
           </div>
         </div>
       </div>

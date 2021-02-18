@@ -2,16 +2,26 @@ body {
   background-color: #181A1B;
 }
 
+.container-custom {
+  height: 100vh;
+  overflow: hidden;
+}
+
 h3 {
   position: relative;
   top: -25px;
   font-weight: 100;
+  font-style: italic;
 }
 
 .jumbotron-custom {
   background-color: #232627;
   color: lightgray;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: 97vh;
+  position: relative;
 }
 
 .rules {
@@ -35,6 +45,7 @@ h3 {
   flex-wrap: wrap;
   margin: auto;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .slot {
@@ -43,8 +54,7 @@ h3 {
   background-size: 80%;
 }
 
-.easy .slot {
-  width: calc(100% / 10);
+.slot {
   border: 1px solid gray;
 }
 
@@ -54,5 +64,19 @@ h3 {
 
 #results {
   font-size: 5rem;
+  text-align: center;
+}
+
+#restart {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#score {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
   text-align: center;
 }
